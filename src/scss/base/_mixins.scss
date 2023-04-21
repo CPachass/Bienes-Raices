@@ -29,3 +29,18 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $separacion;
 }
+
+@mixin boton($bg_color, $display) {
+    background-color: $bg_color;
+    padding: 1rem 2rem;
+    display: $display;
+    text-align: center;
+    color: v.$blanco;
+    text-transform: uppercase;
+    font-weight: v.$bold;
+    font-size: 1.9rem;
+    border: none;
+    &:hover {
+        background-color: darken($bg_color, 5);
+    }
+}

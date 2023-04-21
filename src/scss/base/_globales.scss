@@ -37,3 +37,17 @@ h1 { font-size: 3.8rem; }
 h2 { font-size: 3.4rem; }
 h3 { font-size: 3rem; }
 h4 { font-size: 2.6rem; }
+ul {
+    list-style: none;
+    padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+textarea {
+    resize: none;
+}
+  

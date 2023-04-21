@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contacto {
+    img {
+        height: auto;
+    }
+
+}
+
+.formulario {
+    margin-top: 2rem;
+    legend {
+        font-size: 2rem;
+    }
+    textarea {
+        height: 20rem;
+    }
+    .campo {
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .campo-inline {
+        display: inline;
+        padding-right: 2rem;
+    }
+    .campo-label {
+        text-transform: uppercase;
+        display: block;
+        font-weight: v.$black;
+    }
+    .campo-label-inline {
+        display: inline;
+        padding-right: 1rem;
+    }
+    .campo-smaller {
+        text-transform: none;
+        font-weight: v.$regular;
+    }
+    .campo-valor {
+        width: 100%;
+        border: 1px solid v.$gris;
+        padding: 0.5rem;
+    }
+}

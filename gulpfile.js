@@ -17,22 +17,24 @@ const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 
 /* Tasks */
-function compile_sass() {
-    return src("src/scss/**/*.scss")
+function compile_sass(done) {
+    src("src/scss/**/*.scss")
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write("."))
         .pipe(dest("build/css"));
+    done();
 }
-function optimize_js() {
-    return src("src/js/**/*.js")
+function optimize_js(done) {
+    src("src/js/**/*.js")
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(js())
         .pipe(sourcemaps.write("."))
         .pipe(dest("build/js"));
+    done();
 }
 function watch_archivos(done) {
     watch("src/scss/**/*.scss", compile_sass);

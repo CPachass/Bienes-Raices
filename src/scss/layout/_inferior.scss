@@ -1,0 +1,50 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.seccion-inferior {
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.blog, .testimoniales {
+    h3 { margin-top: 0; }
+}
+
+.entrada-blog {
+    margin-bottom: 2rem;
+    &:last-of-type { margin-bottom: 0; }
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
+    img {
+        height: auto;
+    }
+}
+
+.entrada-texto {
+    h4, p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        &::after {
+            content: "";
+            display: block;
+            width: 15rem;
+            height: 0.5rem;
+            background-color: v.$verde;
+        }
+    }
+    a {
+        color: v.$negro;
+    }
+    span {
+        color: v.$amarillo;
+    }
+}

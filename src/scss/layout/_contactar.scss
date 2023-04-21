@@ -1,0 +1,31 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.webp .imagen-contacto {
+    background-image: url(../../../build/img/encuentra.webp);
+}
+.no-webp .imagen-contacto {
+    background-image: url(../../../build/img/encuentra.jpg);
+}
+
+.imagen-contacto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10rem 2rem;
+    h2, p {
+        margin: 0;
+        color: v.$blanco;
+    }
+    h2 {
+        font-size: 4rem; 
+        font-weight: v.$bold; 
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;   
+}

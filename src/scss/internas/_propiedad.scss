@@ -1,0 +1,25 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.propiedad {
+    img {
+        height: auto;
+    }
+    margin-bottom: 6rem;
+    .precio {
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        color: v.$verde;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+.caracteristicas-iconos-propiedad {
+    column-gap: 2rem;
+    li {
+        flex: unset;
+    }
+}
