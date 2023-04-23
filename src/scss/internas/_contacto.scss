@@ -9,6 +9,9 @@
 }
 
 .formulario {
+    input, textarea, select {
+        border-radius: 1rem;
+    }
     margin-top: 2rem;
     legend {
         font-size: 2rem;

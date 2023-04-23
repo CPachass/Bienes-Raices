@@ -4,11 +4,26 @@
 .barra {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 1rem;
     @include m.tablet {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
+    }
+}
+
+.dark-mode {
+    display: flex;
+    padding-top: 2rem; 
+    img {
+        filter: invert(100%);
+        width: 4rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    @include m.tablet {
+        justify-content: flex-end;
     }
 }
 
@@ -26,5 +41,22 @@
     @include m.tablet {
         flex-direction: row;
         column-gap: 2rem;
+    }
+}    
+.ocultar {
+    display: none;
+}
+/* Mobile menu */
+.mobile-menu {
+    width: 100%;
+    margin-top: 2rem;
+    img {
+        width: 4rem;
+        margin: 0 auto;
+    }
+}
+@include m.tablet {
+    .mobile-menu {
+        display: none;
     }
 }

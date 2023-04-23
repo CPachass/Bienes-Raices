@@ -1,0 +1,27 @@
+@use "base/variables" as v;
+@use "base/mixins" as b;
+
+.dark-mode-all {
+    background-color: darken(v.$grisOscuro, 10);
+    p, a, h1, h2, h3, h4 {
+        color: v.$blanco;
+    }
+    .anuncio {
+        background-color: darken(v.$grisOscuro, 10);
+        border: 1px solid v.$grisOscuro;
+    }
+    li img{
+        filter: invert(100%);
+    }
+    .formulario {
+        fieldset {
+            border: 1px solid darken(v.$grisOscuro, 5);
+        }
+        span, legend, label {
+            color: v.$blanco;
+        }
+        input:not([type="submit"]), textarea, select {
+            background-color: darken(v.$gris, 5);
+        }
+    }
+}
