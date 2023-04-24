@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bienes Raices</title>
-
-        <!--Styles-->
-        <link rel="stylesheet" href="build/css/app.css">
-        <!--Icon-->
-        
-    </head>
-    <body>
-        <header class="header">
-            <div class="dark-mode contenedor">
-                <img src="build/img/dark-mode.svg" alt="imagen dark mode">
-            </div>
-            <div class="contenedor contenido-header">
-                <div class="barra">
-                    <a href="/">
-                        <img src="build/img/logo.svg" alt="Logotido de Bienes Raices">
-                    </a>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div><!--.barra-->
-            </div>
-        </header>
+<?php 
+    require "./includes/funciones.php";
+    incluir_template("header");
+?>
 
         <main class="contenedor seccion propiedad">
             <h1>Casa en Venta frente al bosque</h1>
@@ -58,22 +31,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore quisquam quam laborum soluta blanditiis. Recusandae incidunt quae hic perferendis corrupti quasi reprehenderit, corporis nisi tempore nam saepe earum sint! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quas blanditiis harum alias voluptate corrupti modi laudantium sequi recusandae quo. Aut, aliquid? Molestiae qui eveniet ab quibusdam voluptatem voluptatum rerum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum maiores sit tempora voluptatibus dolor sint aliquid nam amet dolorum, suscipit repudiandae atque.</p>
             </div><!--.anuncio-contenido-->
         </main>
-
-        <footer class="footer seccion">
-            <div class="contenedor contenedor-footer">
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-            <p class="copyright">Todos los derechos reservados, 2023 &copy;</p>
-        </footer>
-
-        <!--Modernizr-->
-        <script src="build/js/modernizr.js"></script>
-        <!--JavaScript-->
-        <script src="build/js/app.js"></script>
-    </body>
-</html>
+        
+<?php
+    incluir_template("footer");
+?>

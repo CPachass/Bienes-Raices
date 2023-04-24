@@ -9,8 +9,14 @@
 }
 
 .formulario {
-    input, textarea, select {
+    input:not([type="file"]), textarea, select {
         border-radius: 1rem;
+    }
+    input[type="submit"] {
+        border-radius: 0;
+        &:hover {
+            cursor: pointer;
+        }
     }
     margin-top: 2rem;
     legend {

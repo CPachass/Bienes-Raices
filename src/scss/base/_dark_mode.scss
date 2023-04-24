@@ -20,8 +20,11 @@
         span, legend, label {
             color: v.$blanco;
         }
-        input:not([type="submit"]), textarea, select {
-            background-color: darken(v.$gris, 5);
+        input:not([type="submit"]), 
+        textarea, select {
+            background-color: v.$negro;
+            border-color: darken(v.$grisOscuro, 5);
+            color: v.$blanco;
         }
     }
 }

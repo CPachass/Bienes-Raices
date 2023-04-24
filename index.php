@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bienes Raices</title>
-
-        <!--Styles-->
-        <link rel="stylesheet" href="build/css/app.css">
-        <!--Icon-->
-        
-    </head>
-    <body>
-        <header class="header inicio">
-            <div class="dark-mode contenedor">
-                <img src="build/img/dark-mode.svg" alt="imagen dark mode">
-            </div>
-            <div class="contenedor contenido-header">
-                <div class="barra">
-                    <a href="/">
-                        <img src="build/img/logo.svg" alt="Logotido de Bienes Raices">
-                    </a>
-                    <div class="mobile-menu">
-                        <img src="build/img/barras.svg" alt="icono del menu desplegable">
-                    </div>
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div><!--.barra-->
-                <h1>Venta de Casa y Departamentos Exclusivos de Lujo</h1>
-            </div> <!-- logo y navegacion-->
-        </header>
+<?php 
+    require "./includes/funciones.php";
+    $inicio = true;
+    incluir_template("header", $inicio);
+?>
 
         <main class="contenedor seccion">
             <h1>Más sobre nosotros</h1>
@@ -204,22 +174,6 @@
                 </div>
             </section> <!--.testimoniales-->
         </div><!--.seccion zona del blog y testimoniales-->
-
-        <footer class="footer seccion">
-            <div class="contenedor contenedor-footer">
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-            <p class="copyright">Todos los derechos reservados, 2023 &copy;</p>
-        </footer>
-
-        <!--Modernizr-->
-        <script src="build/js/modernizr.js"></script>
-        <!--JavaScript-->
-        <script src="build/js/app.js"></script>
-    </body>
-</html>
+<?php
+    incluir_template("footer");
+?>

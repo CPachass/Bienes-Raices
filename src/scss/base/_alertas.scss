@@ -1,0 +1,19 @@
+@use "variables" as v;
+
+.alerta {
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: v.$bold;
+    text-transform: uppercase;
+    color: v.$blanco;
+}
+.alerta-error {
+    background-color: v.$rojo;
+}
