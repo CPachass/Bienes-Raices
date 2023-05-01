@@ -27,103 +27,20 @@
 
         <section class="contenedor seccion">
             <h2>Casas y Departamentos en Venta</h2>
-            
-            <div class="anuncios">
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/anuncio1.avif" type="image/avif">
-                        <source srcset="build/img/anuncio1.webp" type="image/webp">
-                        <img loading="lazy"  width="200" height="300" src="build/img/anuncio1.jpg" alt="imagen de anuncio">
-                    </picture>
-                    <div class="anuncio-contenido">
-                        <h3 class="no-seleccionar">Casa de Lujo en el Lago</h3>
-                        <p class="no-seleccionar">Casa en el lago con excelente vista y acabados de lujo a un excelente precio.</p>
-                        <p class="precio no-seleccionar">$3,000,000.00</p>
-                        <ul class="caracteristicas-iconos no-seleccionar">
-                            <li>
-                                <img loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono dormitorio">
-                                <p>4</p>
-                            </li>
-                        </ul>
-                        <a href="anuncio.html" class="boton-amarillo-block">Ver propiedad</a>
-                    </div><!--.anuncio-contenido-->
-                </div><!--.anuncio-->
-
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/anuncio2.avif" type="image/avif">
-                        <source srcset="build/img/anuncio2.webp" type="image/webp">
-                        <img loading="lazy"  width="200" height="300" src="build/img/anuncio2.jpg" alt="imagen de anuncio">
-                    </picture>
-                    <div class="anuncio-contenido">
-                        <h3 class="no-seleccionar">Casa Terminados de Lujo</h3>
-                        <p class="no-seleccionar">Casa en el lago con excelente vista y acabados de lujo a un excelente precio.</p>
-                        <p class="precio no-seleccionar">$2,000,000.00</p>
-                        <ul class="caracteristicas-iconos no-seleccionar">
-                            <li>
-                                <img loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono dormitorio">
-                                <p>4</p>
-                            </li>
-                        </ul>
-                        <a href="anuncio.html" class="boton-amarillo-block">Ver propiedad</a>
-                    </div><!--.anuncio-contenido-->
-                </div><!--.anuncio-->
-
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/anuncio3.avif" type="image/avif">
-                        <source srcset="build/img/anuncio3.webp" type="image/webp">
-                        <img loading="lazy"  width="200" height="300" src="build/img/anuncio3.jpg" alt="imagen de anuncio">
-                    </picture>
-                    <div class="anuncio-contenido">
-                        <h3 class="no-seleccionar">Casa con Alberca</h3>
-                        <p class="no-seleccionar">Casa en el lago con excelente vista y acabados de lujo a un excelente precio.</p>
-                        <p class="precio no-seleccionar">$4,000,000.00</p>
-                        <ul class="caracteristicas-iconos no-seleccionar">
-                            <li>
-                                <img loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                                <p>3</p>
-                            </li>
-                            <li>
-                                <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono dormitorio">
-                                <p>4</p>
-                            </li>
-                        </ul>
-                        <a href="anuncio.html" class="boton-amarillo-block">Ver propiedad</a>
-                    </div><!--.anuncio-contenido-->
-                </div><!--.anuncio-->
-
-            </div> <!--.anuncios-->
-
+            <?php
+                $limite = 3;
+                include "includes/templates/anuncios.php";
+                // incluir_template("anuncios");
+            ?>
             <div class="alinear-derecha">
-                <a href="anuncios.html" class="boton-verde">Ver Todas</a>
+                <a href="anuncios.php" class="boton-verde">Ver Todas</a>
             </div>
         </section> <!--.seccion casas y departamentos en venta-->
 
         <section class="imagen-contacto">
             <h2>Encuentra la casa de tus sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.</p>
-            <a href="contacto.html" class="boton-amarillo">Contáctanos</a>
+            <a href="contacto.php" class="boton-amarillo">Contáctanos</a>
         </section>
 
         <div class="contenedor seccion seccion-inferior">
@@ -138,7 +55,7 @@
                         </picture>
                     </div><!--.imagen-->
                     <div class="entrada-texto">
-                        <a href="entrada.html">
+                        <a href="entrada.php">
                             <h4>Terraza en el techo de tu casa.</h4>
                             <p>Escrito el: <span>20/04/2023</span> por: <span>Admin</span></p>
                             <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero.</p>
@@ -154,7 +71,7 @@
                         </picture>
                     </div><!--.imagen-->
                     <div class="entrada-texto">
-                        <a href="entrada.html">
+                        <a href="entrada.php">
                             <h4>Guía para la decoración de tu hogar.</h4>
                             <p>Escrito el: <span>20/04/2023</span> por: <span>Admin</span></p>
                             <p>Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>

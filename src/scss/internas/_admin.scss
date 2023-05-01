@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.propiedades-listado {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    thead {
+        background-color: v.$verde;
+        th {
+            color: v.$blanco;
+            padding: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+    tbody {
+        td {
+            font-size: 1.8rem;
+            font-weight: v.$bold;
+        }
+        img {
+            width: 15rem;
+            margin: 0 auto;
+        }
+        a, input { text-transform: capitalize; }
+    }
+
+}
+
+.imagen-small {
+    width: 20rem;
+}
